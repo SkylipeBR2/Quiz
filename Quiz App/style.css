@@ -16,11 +16,12 @@ body
     justify-content: center;
     flex-direction: column;
     gap: 5px;
-    background: linear-gradient(90deg, rgba(91, 30, 159,1) 0%, rgba(77,39,182,1) 100%);
+    background: linear-gradient(90deg, rgba(118, 5, 132, 0.717) 0%, rgb(28, 48, 197) 100%);
 }
 
 body h2
 {
+    margin: 10px;
     color: #fff;
 }
 
@@ -61,12 +62,18 @@ button
 {
     width: 100%;
     text-align: start;
-    padding: 5px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: #008ccc;
     color: #fff;
+    transition: 0.5s;
+}
+
+button:hover
+{
+    opacity: 0.4;
 }
 
 .finish
@@ -80,4 +87,22 @@ button
 .finish button
 {
     text-align: center;
+}
+
+#no-visible
+{
+    display: none;
+}
+
+#-visible
+{
+    display: block;
+    position: absolute; 
+    right: 40%;
+    bottom: 50%;
+
+    background: rgb(70, 186, 70);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
 }
